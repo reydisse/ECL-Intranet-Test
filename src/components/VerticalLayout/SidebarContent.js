@@ -186,7 +186,7 @@ const SidebarContent = props => {
             </li>
 
             <li>
-              <Link to="/">
+              <Link to="/dashboard-saas">
                 <i className="bx bx-task"></i>
                 <span>{props.t("Tasks")}</span>
               </Link>
@@ -201,7 +201,7 @@ const SidebarContent = props => {
             </li>
 
             <li>
-              <Link to="/">
+              <Link to="/dashboard-saas">
                 <i className="bx bxs-user-detail"></i>
                 <span>{props.t("Contacts")}</span>
               </Link>
