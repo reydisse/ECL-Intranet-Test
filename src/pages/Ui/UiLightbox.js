@@ -14,7 +14,6 @@ import {
   Container,
 } from "reactstrap"
 import { Link } from "react-router-dom"
-import { Map, InfoWindow, GoogleApiWrapper } from "google-maps-react"
 import { connect } from "react-redux"
 
 //Lightbox
@@ -355,19 +354,7 @@ const UiLightbox = props => {
                             id="gmaps-markers"
                             className="gmaps"
                             style={{ position: "relative" }}
-                          >
-                            <Map
-                              google={props.google}
-                              zoom={14}
-                              style={{ width: "100%", height: "100%" }}
-                            >
-                              <InfoWindow>
-                                <div>
-                                  <h1>{selectedPlace.name}</h1>
-                                </div>
-                              </InfoWindow>
-                            </Map>
-                          </div>
+                          ></div>
                         </ModalBody>
                       </Modal>
                     </Col>
@@ -477,13 +464,4 @@ const UiLightbox = props => {
   )
 }
 
-export default connect(
-  null,
-  {}
-)(
-  GoogleApiWrapper({
-    apiKey: "AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE",
-    LoadingContainer: LoadingContainer,
-    v: "3",
-  })(UiLightbox)
-)
+export default connect(null, {})(UiLightbox)
