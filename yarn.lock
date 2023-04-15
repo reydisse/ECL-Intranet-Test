@@ -6553,9 +6553,9 @@ globule@^1.0.0:
     minimatch "~3.0.2"
 
 google-maps-react@^2.2.0:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/google-maps-react/-/google-maps-react-2.0.6.tgz#0473356207ab6b47227b393b89e4b83f6eab06da"
-  integrity sha512-M8Eo9WndfQEfxcmm6yRq03qdJgw1x6rQmJ9DN+a+xPQ3K7yNDGkVDbinrf4/8vcox7nELbeopbm4bpefKewWfQ==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/google-maps-react/-/google-maps-react-2.0.3.tgz#59ae56384dadab2dbcdc3e62f6c707eb9a6a0a18"
+  integrity sha512-qq2CCAg0ciXFBsTgkxnz1o+w5vefX10itYxCqKvWFPTNxca7fldQkOVbPhwjOEh/SbleEufXMZWL1M2NBcGiCQ==
 
 gopd@^1.0.1:
   version "1.0.1"
