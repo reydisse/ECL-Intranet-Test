@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 import {
   Row,
@@ -12,49 +12,49 @@ import {
   ModalHeader,
   ModalBody,
   Container,
-} from "reactstrap";
-import { Link } from "react-router-dom";
+} from "reactstrap"
+import { Link } from "react-router-dom"
 import { Map, InfoWindow, GoogleApiWrapper } from "google-maps-react"
-import { connect } from "react-redux";
+import { connect } from "react-redux"
 
 //Lightbox
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "react-image-lightbox"
+import "react-image-lightbox/style.css"
 
 // import image
-import img1 from "../../assets/images/small/img-1.jpg";
-import img2 from "../../assets/images/small/img-2.jpg";
-import img3 from "../../assets/images/small/img-3.jpg";
-import img4 from "../../assets/images/small/img-4.jpg";
-import img5 from "../../assets/images/small/img-5.jpg";
-import img6 from "../../assets/images/small/img-6.jpg";
-import img7 from "../../assets/images/small/img-7.jpg";
+import img1 from "../../assets/images/small/img-1.jpg"
+import img2 from "../../assets/images/small/img-2.jpg"
+import img3 from "../../assets/images/small/img-3.jpg"
+import img4 from "../../assets/images/small/img-4.jpg"
+import img5 from "../../assets/images/small/img-5.jpg"
+import img6 from "../../assets/images/small/img-6.jpg"
+import img7 from "../../assets/images/small/img-7.jpg"
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../components/Common/Breadcrumb"
 
-const images = [img1, img2, img3, img4, img5, img6];
-const imageZoom = [img3, img7];
+const images = [img1, img2, img3, img4, img5, img6]
+const imageZoom = [img3, img7]
 
 const LoadingContainer = () => <div>Loading...</div>
 
-const UiLightbox = (props) => {
+const UiLightbox = props => {
   const selectedPlace = {}
 
   //meta title
-  document.title = "Lightbox | Skote - React Admin & Dashboard Template";
+  document.title = "Lightbox | Skote - React Admin & Dashboard Template"
 
-  const [photoIndex, setphotoIndex] = useState(0);
-  const [isFits, setisFits] = useState(false);
-  const [isEffects, setisEffects] = useState(false);
-  const [isGallery, setisGallery] = useState(false);
-  const [isGalleryZoom, setisGalleryZoom] = useState(false);
-  const [isOpen, setisOpen] = useState(false);
-  const [isOpen1, setisOpen1] = useState(false);
-  const [modal, setmodal] = useState(false);
-  const [map, setMap] = useState(false);
+  const [photoIndex, setphotoIndex] = useState(0)
+  const [isFits, setisFits] = useState(false)
+  const [isEffects, setisEffects] = useState(false)
+  const [isGallery, setisGallery] = useState(false)
+  const [isGalleryZoom, setisGalleryZoom] = useState(false)
+  const [isOpen, setisOpen] = useState(false)
+  const [isOpen1, setisOpen1] = useState(false)
+  const [modal, setmodal] = useState(false)
+  const [map, setMap] = useState(false)
   function tog_map() {
-    setMap(!map);
+    setMap(!map)
   }
   return (
     <React.Fragment>
@@ -70,7 +70,7 @@ const UiLightbox = (props) => {
                 "Caption. Can be aligned it to any side and contain any HTML."
               }
               onCloseRequest={() => {
-                setisFits(!isFits);
+                setisFits(!isFits)
               }}
             />
           ) : null}
@@ -80,7 +80,7 @@ const UiLightbox = (props) => {
               mainSrc={images[2]}
               enableZoom={false}
               onCloseRequest={() => {
-                setisEffects(!isEffects);
+                setisEffects(!isEffects)
               }}
             />
           ) : null}
@@ -92,13 +92,13 @@ const UiLightbox = (props) => {
               prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               enableZoom={true}
               onCloseRequest={() => {
-                setisGallery(false);
+                setisGallery(false)
               }}
               onMovePrevRequest={() => {
-                setphotoIndex((photoIndex + images.length - 1) % images.length);
+                setphotoIndex((photoIndex + images.length - 1) % images.length)
               }}
               onMoveNextRequest={() => {
-                setphotoIndex((photoIndex + 1) % images.length);
+                setphotoIndex((photoIndex + 1) % images.length)
               }}
               imageCaption={"Project " + parseFloat(photoIndex + 1)}
             />
@@ -108,15 +108,21 @@ const UiLightbox = (props) => {
             <Lightbox
               mainSrc={imageZoom[photoIndex]}
               nextSrc={imageZoom[(photoIndex + 1) % imageZoom.length]}
-              prevSrc={imageZoom[(photoIndex + imageZoom.length - 1) % imageZoom.length]}
+              prevSrc={
+                imageZoom[
+                  (photoIndex + imageZoom.length - 1) % imageZoom.length
+                ]
+              }
               onCloseRequest={() => {
-                setisGalleryZoom(false);
+                setisGalleryZoom(false)
               }}
               onMovePrevRequest={() => {
-                setphotoIndex((photoIndex + imageZoom.length - 1) % imageZoom.length);
+                setphotoIndex(
+                  (photoIndex + imageZoom.length - 1) % imageZoom.length
+                )
               }}
               onMoveNextRequest={() => {
-                setphotoIndex((photoIndex + 1) % imageZoom.length);
+                setphotoIndex((photoIndex + 1) % imageZoom.length)
               }}
             />
           ) : null}
@@ -132,15 +138,13 @@ const UiLightbox = (props) => {
                   <Row>
                     <Col className="col-6">
                       <div>
-                        <h5 className="mt-0 font-size-14">
-                          Fits (Horz/Vert)
-                        </h5>
+                        <h5 className="mt-0 font-size-14">Fits (Horz/Vert)</h5>
                         <img
                           onClick={() => {
-                            setisFits(true);
+                            setisFits(true)
                           }}
                           className="img-fluid"
-                          alt="Skote"
+                          alt="Intranet"
                           src={img2}
                           width="145"
                         />
@@ -151,7 +155,7 @@ const UiLightbox = (props) => {
                         <h5 className="mt-0 font-size-14">Effects</h5>
                         <img
                           onClick={() => {
-                            setisEffects(true);
+                            setisEffects(true)
                           }}
                           className="img-fluid"
                           alt=""
@@ -183,8 +187,8 @@ const UiLightbox = (props) => {
                       <img
                         src={img1}
                         onClick={() => {
-                          setisGallery(true);
-                          setphotoIndex(0);
+                          setisGallery(true)
+                          setphotoIndex(0)
                         }}
                         alt=""
                         width="120"
@@ -194,8 +198,8 @@ const UiLightbox = (props) => {
                       <img
                         src={img2}
                         onClick={() => {
-                          setisGallery(true);
-                          setphotoIndex(1);
+                          setisGallery(true)
+                          setphotoIndex(1)
                         }}
                         alt=""
                         width="120"
@@ -205,8 +209,8 @@ const UiLightbox = (props) => {
                       <img
                         src={img3}
                         onClick={() => {
-                          setisGallery(true);
-                          setphotoIndex(2);
+                          setisGallery(true)
+                          setphotoIndex(2)
                         }}
                         alt=""
                         width="120"
@@ -216,8 +220,8 @@ const UiLightbox = (props) => {
                       <img
                         src={img4}
                         onClick={() => {
-                          setisGallery(true);
-                          setphotoIndex(3);
+                          setisGallery(true)
+                          setphotoIndex(3)
                         }}
                         alt=""
                         width="120"
@@ -227,8 +231,8 @@ const UiLightbox = (props) => {
                       <img
                         src={img5}
                         onClick={() => {
-                          setisGallery(true);
-                          setphotoIndex(4);
+                          setisGallery(true)
+                          setphotoIndex(4)
                         }}
                         alt=""
                         width="120"
@@ -238,8 +242,8 @@ const UiLightbox = (props) => {
                       <img
                         src={img6}
                         onClick={() => {
-                          setisGallery(true);
-                          setphotoIndex(5);
+                          setisGallery(true)
+                          setphotoIndex(5)
                         }}
                         alt=""
                         width="120"
@@ -265,8 +269,8 @@ const UiLightbox = (props) => {
                       src={img3}
                       className="float-left"
                       onClick={() => {
-                        setisGalleryZoom(true);
-                        setphotoIndex(0);
+                        setisGalleryZoom(true)
+                        setphotoIndex(0)
                       }}
                       alt=""
                       width="275"
@@ -275,8 +279,8 @@ const UiLightbox = (props) => {
                       src={img7}
                       className="float-left"
                       onClick={() => {
-                        setisGalleryZoom(true);
-                        setphotoIndex(1);
+                        setisGalleryZoom(true)
+                        setphotoIndex(1)
                       }}
                       alt=""
                       width="275"
@@ -300,7 +304,7 @@ const UiLightbox = (props) => {
                       <Button
                         className="btn btn-secondary me-1"
                         onClick={() => {
-                          setisOpen(!isOpen);
+                          setisOpen(!isOpen)
                         }}
                       >
                         Open Youtube Video
@@ -308,7 +312,7 @@ const UiLightbox = (props) => {
                       <Button
                         className="btn btn-secondary me-1"
                         onClick={() => {
-                          setisOpen1(!isOpen1);
+                          setisOpen1(!isOpen1)
                         }}
                       >
                         Open Vimeo Video
@@ -317,7 +321,8 @@ const UiLightbox = (props) => {
                         onClick={() => {
                           tog_map()
                         }}
-                        className="popup-gmaps btn btn-secondary mo-mb-2">
+                        className="popup-gmaps btn btn-secondary mo-mb-2"
+                      >
                         Open Google Map
                       </Button>
                       {/* <ModalVideo
@@ -344,9 +349,7 @@ const UiLightbox = (props) => {
                           tog_map()
                         }}
                       >
-                        <ModalHeader toggle={tog_map}>
-                          Google Map
-                        </ModalHeader>
+                        <ModalHeader toggle={tog_map}>Google Map</ModalHeader>
                         <ModalBody>
                           <div
                             id="gmaps-markers"
@@ -378,7 +381,7 @@ const UiLightbox = (props) => {
                   <div>
                     <Link
                       onClick={() => {
-                        setmodal(!modal);
+                        setmodal(!modal)
                       }}
                       to="#"
                       className="popup-form btn btn-primary"
@@ -391,13 +394,13 @@ const UiLightbox = (props) => {
                     size="xl"
                     isOpen={modal}
                     toggle={() => {
-                      setmodal(!modal);
+                      setmodal(!modal)
                     }}
                     centered
                   >
                     <ModalHeader
                       toggle={() => {
-                        setmodal(!modal);
+                        setmodal(!modal)
                       }}
                       className="h4"
                     >
@@ -471,8 +474,8 @@ const UiLightbox = (props) => {
         </Container>
       </div>
     </React.Fragment>
-  );
-};
+  )
+}
 
 export default connect(
   null,

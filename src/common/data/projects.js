@@ -33,9 +33,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -93,9 +93,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -148,9 +148,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -203,9 +203,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -257,9 +257,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -332,9 +332,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -394,9 +394,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -478,9 +478,9 @@ const projects = [
       ],
     },
     files: [
-      { name: "Skote Landing.Zip", size: "3.25 MB", link: "#" },
-      { name: "Skote Admin.Zip", size: "3.15 MB", link: "#" },
-      { name: "Skote Logo.Zip", size: "2.02 MB", link: "#" },
+      { name: "ECL Landing.Zip", size: "3.25 MB", link: "#" },
+      { name: "ECL Admin.Zip", size: "3.15 MB", link: "#" },
+      { name: "ECL Logo.Zip", size: "2.02 MB", link: "#" },
       { name: "Veltrix admin.Zip", size: "2.25 MB", link: "#" },
     ],
     comments: [
@@ -642,7 +642,7 @@ const projectListData = [
   {
     id: 5,
     img: "",
-    name: "Skote Dashboard UI",
+    name: "ECL Dashboard UI",
     description: "Separate existence is a myth",
     dueDate: "22 Oct, 19",
     status: "Completed",

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 import {
   Col,
@@ -14,27 +14,26 @@ import {
   CardFooter,
   CardDeck,
   Container,
-} from "reactstrap";
+} from "reactstrap"
 
 // import images
-import img1 from "../../assets/images/small/img-1.jpg";
-import img2 from "../../assets/images/small/img-2.jpg";
-import img3 from "../../assets/images/small/img-3.jpg";
-import img4 from "../../assets/images/small/img-4.jpg";
-import img5 from "../../assets/images/small/img-5.jpg";
-import img6 from "../../assets/images/small/img-6.jpg";
-import img7 from "../../assets/images/small/img-7.jpg";
-import { Link } from "react-router-dom";
+import img1 from "../../assets/images/small/img-1.jpg"
+import img2 from "../../assets/images/small/img-2.jpg"
+import img3 from "../../assets/images/small/img-3.jpg"
+import img4 from "../../assets/images/small/img-4.jpg"
+import img5 from "../../assets/images/small/img-5.jpg"
+import img6 from "../../assets/images/small/img-6.jpg"
+import img7 from "../../assets/images/small/img-7.jpg"
+import { Link } from "react-router-dom"
 
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../components/Common/Breadcrumb"
 
 const UiCards = () => {
-
   //meta title
-  document.title = "Cards | Skote - React Admin & Dashboard Template";
+  document.title = "Cards | Skote - React Admin & Dashboard Template"
 
   return (
     <React.Fragment>
@@ -45,17 +44,14 @@ const UiCards = () => {
           <Row>
             <Col mg={6} xl={3}>
               <Card>
-                <CardImg top className="img-fluid" src={img1} alt="Skote" />
+                <CardImg top className="img-fluid" src={img1} alt="Intranet" />
                 <CardBody>
                   <CardTitle className="mt-0">Card title</CardTitle>
                   <CardText>
                     Some quick example text to build on the card title and make
                     up the bulk of the card&apos;s content.
                   </CardText>
-                  <Link
-                    to="#"
-                    className="btn btn-primary"
-                  >
+                  <Link to="#" className="btn btn-primary">
                     Button
                   </Link>
                 </CardBody>
@@ -63,7 +59,7 @@ const UiCards = () => {
             </Col>
             <Col mg={6} xl={3}>
               <Card>
-                <CardImg top className="img-fluid" src={img2} alt="Skote" />
+                <CardImg top className="img-fluid" src={img2} alt="Intranet" />
                 <CardBody>
                   <CardTitle className="mt-0">Card title</CardTitle>
                   <CardText>
@@ -88,7 +84,7 @@ const UiCards = () => {
 
             <Col mg={6} xl={3}>
               <Card>
-                <CardImg top className="img-fluid" src={img3} alt="Skote" />
+                <CardImg top className="img-fluid" src={img3} alt="Intranet" />
                 <CardBody>
                   <CardText>
                     Some quick example text to build on the card title and make
@@ -105,7 +101,7 @@ const UiCards = () => {
                     Support card subtitle
                   </CardSubtitle>
                 </CardBody>
-                <CardImg className="img-fluid" src={img4} alt="Skote" />
+                <CardImg className="img-fluid" src={img4} alt="Intranet" />
                 <CardBody>
                   <CardText>
                     Some quick example text to build on the card title and make
@@ -130,10 +126,7 @@ const UiCards = () => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
-                <Link
-                  to="#"
-                  className="btn btn-primary"
-                >
+                <Link to="#" className="btn btn-primary">
                   Go somewhere
                 </Link>
               </Card>
@@ -145,10 +138,7 @@ const UiCards = () => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
-                <Link
-                  to="#"
-                  className="btn btn-primary"
-                >
+                <Link to="#" className="btn btn-primary">
                   Go somewhere
                 </Link>
               </Card>
@@ -163,10 +153,7 @@ const UiCards = () => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
-                <Link
-                  to="#"
-                  className="btn btn-primary"
-                >
+                <Link to="#" className="btn btn-primary">
                   Go somewhere
                 </Link>
               </Card>
@@ -179,10 +166,7 @@ const UiCards = () => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
-                <Link
-                  to="#"
-                  className="btn btn-primary"
-                >
+                <Link to="#" className="btn btn-primary">
                   Go somewhere
                 </Link>
               </Card>
@@ -195,10 +179,7 @@ const UiCards = () => {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
-                <Link
-                  to="#"
-                  className="btn btn-primary"
-                >
+                <Link to="#" className="btn btn-primary">
                   Go somewhere
                 </Link>
               </Card>
@@ -208,7 +189,9 @@ const UiCards = () => {
           <Row>
             <Col lg={4}>
               <Card>
-                <h5 className="card-header bg-transparent border-bottom text-uppercase">Featured</h5>
+                <h5 className="card-header bg-transparent border-bottom text-uppercase">
+                  Featured
+                </h5>
                 <CardBody>
                   <CardTitle className="mt-0">
                     Special title treatment
@@ -226,7 +209,9 @@ const UiCards = () => {
 
             <Col lg={4}>
               <Card>
-                <CardHeader className="bg-transparent border-bottom text-uppercase">Quote</CardHeader>
+                <CardHeader className="bg-transparent border-bottom text-uppercase">
+                  Quote
+                </CardHeader>
                 <CardBody>
                   <blockquote className="card-blockquote mb-0">
                     <CardText>
@@ -244,7 +229,9 @@ const UiCards = () => {
 
             <Col lg={4}>
               <Card>
-                <CardHeader className="bg-transparent border-bottom text-uppercase">Featured</CardHeader>
+                <CardHeader className="bg-transparent border-bottom text-uppercase">
+                  Featured
+                </CardHeader>
                 <CardBody>
                   <CardTitle className="mt-0">
                     Special title treatment
@@ -253,10 +240,7 @@ const UiCards = () => {
                     With supporting text below as a natural lead-in to
                     additional content.
                   </CardText>
-                  <Link
-                    to="#"
-                    className="btn btn-primary"
-                  >
+                  <Link to="#" className="btn btn-primary">
                     Go somewhere
                   </Link>
                 </CardBody>
@@ -268,7 +252,7 @@ const UiCards = () => {
           <Row>
             <Col lg={4}>
               <Card>
-                <CardImg top className="img-fluid" src={img5} alt="Skote" />
+                <CardImg top className="img-fluid" src={img5} alt="Intranet" />
                 <CardBody>
                   <CardTitle className="mt-0">Card title</CardTitle>
                   <CardText>
@@ -300,13 +284,18 @@ const UiCards = () => {
                     </small>
                   </CardText>
                 </CardBody>
-                <CardImg bottom className="img-fluid" src={img7} alt="Skote" />
+                <CardImg
+                  bottom
+                  className="img-fluid"
+                  src={img7}
+                  alt="Intranet"
+                />
               </Card>
             </Col>
 
             <Col lg={4}>
               <Card>
-                <CardImg className="img-fluid" src={img6} alt="Skote" />
+                <CardImg className="img-fluid" src={img6} alt="Intranet" />
                 <CardImgOverlay>
                   <CardTitle className="text-white mt-0">Card title</CardTitle>
                   <CardText className="text-light">
@@ -329,7 +318,7 @@ const UiCards = () => {
               <Card>
                 <Row className="no-gutters align-items-center">
                   <Col md={4}>
-                    <CardImg className="img-fluid" src={img2} alt="Skote" />
+                    <CardImg className="img-fluid" src={img2} alt="Intranet" />
                   </Col>
                   <Col md={8}>
                     <CardBody>
@@ -366,7 +355,7 @@ const UiCards = () => {
                     </CardBody>
                   </Col>
                   <Col md={4}>
-                    <CardImg className="img-fluid" src={img3} alt="Skote" />
+                    <CardImg className="img-fluid" src={img3} alt="Intranet" />
                   </Col>
                 </Row>
               </Card>
@@ -406,8 +395,8 @@ const UiCards = () => {
               <Card color="info" className="text-white-50">
                 <CardBody>
                   <CardTitle className="mb-4 text-white">
-                    <i className="mdi mdi-alert-circle-outline me-3" />Info
-                    Card
+                    <i className="mdi mdi-alert-circle-outline me-3" />
+                    Info Card
                   </CardTitle>
                   <CardText>
                     Some quick example text to build on the card title and make
@@ -423,7 +412,8 @@ const UiCards = () => {
               <Card color="warning" className="text-white-50">
                 <CardBody>
                   <CardTitle className="mb-4 text-white">
-                    <i className="mdi mdi-alert-outline me-3" />Warning Card
+                    <i className="mdi mdi-alert-outline me-3" />
+                    Warning Card
                   </CardTitle>
                   <CardText>
                     Some quick example text to build on the card title and make
@@ -437,7 +427,8 @@ const UiCards = () => {
               <Card color="danger" className="text-white-50">
                 <CardBody>
                   <CardTitle className="mb-4 text-white">
-                    <i className="mdi mdi-block-helper me-3" />Danger Card
+                    <i className="mdi mdi-block-helper me-3" />
+                    Danger Card
                   </CardTitle>
                   <CardText>
                     Some quick example text to build on the card title and make
@@ -451,8 +442,8 @@ const UiCards = () => {
               <Card color="dark" className="text-light">
                 <CardBody>
                   <CardTitle className="mb-4 text-white">
-                    <i className="mdi mdi-alert-circle-outline me-3" />Dark
-                    Card
+                    <i className="mdi mdi-alert-circle-outline me-3" />
+                    Dark Card
                   </CardTitle>
                   <CardText>
                     Some quick example text to build on the card title and make
@@ -468,8 +459,8 @@ const UiCards = () => {
               <Card outline color="primary" className="border">
                 <CardHeader className="bg-transparent">
                   <h5 className="my-0 text-primary">
-                    <i className="mdi mdi-bullseye-arrow me-3" />Primary
-                    outline Card
+                    <i className="mdi mdi-bullseye-arrow me-3" />
+                    Primary outline Card
                   </h5>
                 </CardHeader>
                 <CardBody>
@@ -486,8 +477,8 @@ const UiCards = () => {
               <Card outline color="danger" className="border">
                 <CardHeader className="bg-transparent">
                   <h5 className="my-0 text-danger">
-                    <i className="mdi mdi-block-helper me-3" />Danger outline
-                    Card
+                    <i className="mdi mdi-block-helper me-3" />
+                    Danger outline Card
                   </h5>
                 </CardHeader>
                 <CardBody>
@@ -504,7 +495,8 @@ const UiCards = () => {
               <Card outline color="success" className="border">
                 <CardHeader className="bg-transparent">
                   <h5 className="my-0 text-success">
-                    <i className="mdi mdi-check-all me-3" />Success Card
+                    <i className="mdi mdi-check-all me-3" />
+                    Success Card
                   </h5>
                 </CardHeader>
                 <CardBody>
@@ -524,7 +516,12 @@ const UiCards = () => {
               <CardDeck className="card-deck-wrapper">
                 <div className="card-group">
                   <Card className="mb-4">
-                    <CardImg top className="img-fluid" src={img4} alt="Skote" />
+                    <CardImg
+                      top
+                      className="img-fluid"
+                      src={img4}
+                      alt="Intranet"
+                    />
                     <CardBody>
                       <CardTitle className="mt-0">Card title</CardTitle>
                       <CardText>
@@ -540,7 +537,12 @@ const UiCards = () => {
                     </CardBody>
                   </Card>
                   <Card className="mb-4">
-                    <CardImg top className="img-fluid" src={img5} alt="Skote" />
+                    <CardImg
+                      top
+                      className="img-fluid"
+                      src={img5}
+                      alt="Intranet"
+                    />
                     <CardBody>
                       <CardTitle className="mt-0">Card title</CardTitle>
                       <CardText>
@@ -555,14 +557,19 @@ const UiCards = () => {
                     </CardBody>
                   </Card>
                   <Card className="mb-4">
-                    <CardImg top className="img-fluid" src={img6} alt="Skote" />
+                    <CardImg
+                      top
+                      className="img-fluid"
+                      src={img6}
+                      alt="Intranet"
+                    />
                     <CardBody>
                       <CardTitle className="mt-0">Card title</CardTitle>
                       <CardText>
                         This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This card has even
-                        longer content than the first to show that equal height
-                        action.
+                        natural lead-in to additional content. This card has
+                        even longer content than the first to show that equal
+                        height action.
                       </CardText>
                       <CardText>
                         <small className="text-muted">
@@ -590,88 +597,113 @@ const UiCards = () => {
                     // className="my-masonry-grid"
                     // columnClassName="my-masonry-grid_column"
                   >
-
                     <Card>
                       <img src={img3} className="card-img-top" alt="..." />
                       <CardBody>
-                        <h5 className="card-title">Card title that wraps to a new line</h5>
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 className="card-title">
+                          Card title that wraps to a new line
+                        </h5>
+                        <p className="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
                       </CardBody>
                     </Card>
-
-
 
                     <Card>
                       <img src={img5} className="card-img-top" alt="..." />
                       <CardBody>
                         <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <p className="card-text">
+                          This card has supporting text below as a natural
+                          lead-in to additional content.
+                        </p>
+                        <p className="card-text">
+                          <small className="text-muted">
+                            Last updated 3 mins ago
+                          </small>
+                        </p>
                       </CardBody>
                     </Card>
-
-
 
                     <Card>
                       <img src={img7} className="card-img-top" alt="..." />
                     </Card>
 
-
-
                     <Card>
                       <CardBody>
                         <blockquote className="blockquote font-size-14 mb-0">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Integer posuere erat a ante.
+                          </p>
                           <footer className="blockquote-footer mt-0 font-size-12">
-                            Someone famous in <cite title="Source Title">Source Title</cite>
+                            Someone famous in{" "}
+                            <cite title="Source Title">Source Title</cite>
                           </footer>
                         </blockquote>
                       </CardBody>
                     </Card>
 
-
-
                     <div className="card bg-primary text-white text-center p-3">
                       <blockquote className="card-blockquote font-size-14 mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Integer posuere erat.
+                        </p>
                         <footer className="blockquote-footer mt-0 text-white font-size-12 mb-0">
-                          Someone famous in <cite title="Source Title">Source Title</cite>
+                          Someone famous in{" "}
+                          <cite title="Source Title">Source Title</cite>
                         </footer>
                       </blockquote>
                     </div>
 
-
-
                     <div className="card p-3 text-end">
                       <blockquote className="blockquote blockquote-reverse  mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Integer posuere erat a ante.
+                        </p>
                         <footer className="blockquote-footer mt-0">
                           <small className="text-muted">
-                            Someone famous in <cite title="Source Title">Source Title</cite>
+                            Someone famous in{" "}
+                            <cite title="Source Title">Source Title</cite>
                           </small>
                         </footer>
                       </blockquote>
                     </div>
 
-
+                    <Card>
+                      <CardBody>
+                        <h5 className="card-title">Card title</h5>
+                        <p className="card-text">
+                          This is another card with title and supporting text
+                          below. This card has some additional content to make
+                          it slightly taller overall.
+                        </p>
+                        <p className="card-text">
+                          <small className="text-muted">
+                            Last updated 3 mins ago
+                          </small>
+                        </p>
+                      </CardBody>
+                    </Card>
 
                     <Card>
                       <CardBody>
                         <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <p className="card-text">
+                          This card has a regular title and short paragraphy of
+                          text below it.
+                        </p>
+                        <p className="card-text">
+                          <small className="text-muted">
+                            Last updated 3 mins ago
+                          </small>
+                        </p>
                       </CardBody>
                     </Card>
-
-
-                    <Card>
-                      <CardBody>
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This card has a regular title and short paragraphy of text below it.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                      </CardBody>
-                    </Card>
-
                   </Masonry>
                 </ResponsiveMasonry>
               </Row>
@@ -680,6 +712,6 @@ const UiCards = () => {
         </Container>
       </div>
     </React.Fragment>
-  );
-};
-export default UiCards;
+  )
+}
+export default UiCards
