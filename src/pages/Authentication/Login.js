@@ -114,7 +114,7 @@ const Login = props => {
                   <Row>
                     <Col xs={7}>
                       <div className="text-primary p-4">
-                        <h5 className="text-primary">Welcome Black</h5>
+                        <h5 className="text-primary">Welcome</h5>
                         <p>Sign in to continue</p>
                       </div>
                     </Col>
