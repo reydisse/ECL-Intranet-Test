@@ -7,7 +7,6 @@
 //   icoLandingTeam,
 //   blogs,
 // } from "./crypto"
-import { invoiceList } from "./invoices"
 import { projects, projectListData, OverviewTeamMember } from "./projects"
 import { tasks } from "./tasks"
 import { allmail, mailDB } from "./mails"
@@ -67,7 +66,6 @@ export {
   // recentProducts,
   // comments,
   allmail,
-  invoiceList,
   projects,
   projectListData,
   OverviewTeamMember,

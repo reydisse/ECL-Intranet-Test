@@ -8,7 +8,6 @@ import {
   contacts,
   events,
   groups,
-  invoiceList,
   messages,
   projects,
   tasks,
