@@ -1,9 +1,8 @@
 import React from "react"
 import ReactApexChart from "react-apexcharts"
-import getChartColorsArray from "../../components/Common/ChartsDynamicColor";
 
-const ApexRevenue = ({dataColors}) => {
-  var apexRevenuechartColors =  getChartColorsArray(dataColors); 
+const ApexRevenue = ({ dataColors }) => {
+  var apexRevenuechartColors = getChartColorsArray(dataColors)
   const options = {
     chart: {
       height: 300,
@@ -67,7 +66,13 @@ const ApexRevenue = ({dataColors}) => {
   ]
 
   return (
-    <ReactApexChart options={options} series={series} type="bar" height="330" className="apex-charts" />
+    <ReactApexChart
+      options={options}
+      series={series}
+      type="bar"
+      height="330"
+      className="apex-charts"
+    />
   )
 }
 

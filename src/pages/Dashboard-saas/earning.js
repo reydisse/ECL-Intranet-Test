@@ -9,8 +9,6 @@ import { getEarningChartsData } from "../../store/actions"
 //redux
 import { useSelector, useDispatch } from "react-redux"
 
-import getChartColorsArray from "../../components/Common/ChartsDynamicColor"
-
 const Earning = ({ dataColors }) => {
   const apexearningChartColors = getChartColorsArray(dataColors)
   const dispatch = useDispatch()

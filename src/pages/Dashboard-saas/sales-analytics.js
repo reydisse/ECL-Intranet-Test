@@ -1,11 +1,10 @@
-import React from "react";
-import { Row, Col, Card, CardBody } from "reactstrap";
-import ReactApexChart from "react-apexcharts";
-import getChartColorsArray from "../../components/Common/ChartsDynamicColor";
+import React from "react"
+import { Row, Col, Card, CardBody } from "reactstrap"
+import ReactApexChart from "react-apexcharts"
 
 const SalesAnalytics = ({ dataColors }) => {
-  const apexsalesAnalyticsChartColors = getChartColorsArray(dataColors);
-  const series = [56, 38, 26];
+  const apexsalesAnalyticsChartColors = getChartColorsArray(dataColors)
+  const series = [56, 38, 26]
   const options = {
     labels: ["Series A", "Series B", "Series C"],
     colors: apexsalesAnalyticsChartColors,
@@ -17,7 +16,7 @@ const SalesAnalytics = ({ dataColors }) => {
         },
       },
     },
-  };
+  }
 
   return (
     <React.Fragment>
@@ -73,7 +72,7 @@ const SalesAnalytics = ({ dataColors }) => {
         </Card>
       </Col>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default SalesAnalytics;
+export default SalesAnalytics

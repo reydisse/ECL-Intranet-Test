@@ -40,7 +40,6 @@ import ForgetPwd from "../pages/Authentication/ForgetPassword"
 import Login1 from "../pages/AuthenticationInner/Login"
 import Register1 from "../pages/AuthenticationInner/Register"
 import Recoverpw from "../pages/AuthenticationInner/Recoverpw"
-import Recoverpw2 from "../pages/AuthenticationInner/Recoverpw2"
 import ForgetPwd1 from "../pages/AuthenticationInner/ForgetPassword"
 import LockScreen from "../pages/AuthenticationInner/auth-lock-screen"
 import ConfirmMail from "../pages/AuthenticationInner/page-confirm-mail"
@@ -50,15 +49,6 @@ import TwostepVerification from "../pages/AuthenticationInner/auth-two-step-veri
 // Dashboard
 import Dashboard from "../pages/Dashboard/index"
 import DashboardSaas from "../pages/Dashboard-saas/index"
-
-// Charts
-import ChartApex from "../pages/Charts/Apexcharts"
-import ChartistChart from "../pages/Charts/ChartistChart"
-import ChartjsChart from "../pages/Charts/ChartjsChart"
-import EChart from "../pages/Charts/EChart"
-import SparklineChart from "../pages/Charts/SparklineChart"
-import ChartsKnob from "../pages/Charts/charts-knob"
-import ReCharts from "../pages/Charts/ReCharts"
 
 //Icons
 import IconBoxicons from "../pages/Icons/IconBoxicons"
@@ -151,15 +141,6 @@ const authProtectedRoutes = [
   { path: "/contacts-list", component: <ContactsList /> },
   { path: "/contacts-profile", component: <ContactsProfile /> },
 
-  //Charts
-  { path: "/apex-charts", component: <ChartApex /> },
-  { path: "/chartist-charts", component: <ChartistChart /> },
-  { path: "/chartjs-charts", component: <ChartjsChart /> },
-  { path: "/e-charts", component: <EChart /> },
-  { path: "/sparkline-charts", component: <SparklineChart /> },
-  { path: "/charts-knob", component: <ChartsKnob /> },
-  { path: "/re-charts", component: <ReCharts /> },
-
   // Icons
   { path: "/icons-boxicons", component: <IconBoxicons /> },
   { path: "/icons-dripicons", component: <IconDripicons /> },
@@ -227,7 +208,6 @@ const publicRoutes = [
   { path: "/pages-login", component: <Login1 /> },
   { path: "/pages-register", component: <Register1 /> },
   { path: "/page-recoverpw", component: <Recoverpw /> },
-  { path: "/page-recoverpw-2", component: <Recoverpw2 /> },
   { path: "/pages-forgot-pwd", component: <ForgetPwd1 /> },
   { path: "/auth-lock-screen", component: <LockScreen /> },
   { path: "/page-confirm-mail", component: <ConfirmMail /> },

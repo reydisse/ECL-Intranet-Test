@@ -1,29 +1,28 @@
 import React from "react"
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 import ReactApexChart from "react-apexcharts"
-import getChartColorsArray from "../../components/Common/ChartsDynamicColor";
 
 const StackedColumnChart = ({ dataColors, periodData }) => {
-  const stackedColumnChartColors = getChartColorsArray(dataColors);
+  const stackedColumnChartColors = getChartColorsArray(dataColors)
   const options = {
     chart: {
       stacked: !0,
       toolbar: {
-        show: 1
+        show: 1,
       },
       zoom: {
-        enabled: !0
-      }
+        enabled: !0,
+      },
     },
     plotOptions: {
       bar: {
         horizontal: !1,
-        columnWidth: "15%"
+        columnWidth: "15%",
         // endingShape: "rounded"
-      }
+      },
     },
     dataLabels: {
-      enabled: !1
+      enabled: !1,
     },
     xaxis: {
       show: true,
@@ -39,19 +38,19 @@ const StackedColumnChart = ({ dataColors, periodData }) => {
         "Sep",
         "Oct",
         "Nov",
-        "Dec"
+        "Dec",
       ],
       labels: {
-        show: true
-      }
+        show: true,
+      },
     },
     colors: stackedColumnChartColors,
     legend: {
-      position: "bottom"
+      position: "bottom",
     },
     fill: {
-      opacity: 1
-    }
+      opacity: 1,
+    },
   }
   return (
     <React.Fragment>
@@ -63,10 +62,10 @@ const StackedColumnChart = ({ dataColors, periodData }) => {
         className="apex-charts"
       />
     </React.Fragment>
-  );
+  )
 }
 
 StackedColumnChart.propTypes = {
-  periodData: PropTypes.any
+  periodData: PropTypes.any,
 }
-export default StackedColumnChart;
+export default StackedColumnChart

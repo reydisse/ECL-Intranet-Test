@@ -28,7 +28,7 @@ const Sidebar = props => {
             </span>
           </Link>
 
-          <Link to="/" className="logo logo-light">
+          <Link to="/dashboard-saas" className="logo logo-light">
             <span className="logo-sm">
               <img src={logoLightSvg} alt="" height="22" />
             </span>
